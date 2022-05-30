@@ -1,0 +1,223 @@
+
+/* Codemirror styles */
+.CodeMirror,
+.CodeMirror * {
+  font-size: 15px;
+  font-family: Monaco, MonoSpace;
+  line-height: 1.3;
+}
+.CodeMirror {
+  background: #1f2326;
+  height: 100%;
+  transition: 0.3s;
+  opacity: 1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.CodeMirror-gutters {
+  border: none;
+  background: #1f2326;
+}
+.CodeMirror-linenumber {
+  color: #343434;
+}
+.CodeMirror div.CodeMirror-cursor {
+  border-color: rgba(255,255,255,0.9) !important;
+}
+.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.05);
+}
+.CodeMirror-focused .CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+.CodeMirror-matchingbracket {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.CodeMirror pre {
+  color: rgba(255,255,255,0.9);
+}
+.CodeMirror-sizer {
+  border-right: none;
+}
+.CodeMirror-code {
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+.CodeMirror-dialog{
+  background: #eee;
+  padding: 5px;
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.CodeMirror-dialog .CodeMirror-search-hint{
+  display: none;
+}
+.CodeMirror-dialog .CodeMirror-search-field{
+  width: 300px !important;
+  font: 13px/1.3 Monaco, MonoSpace;
+}
+.CodeMirror-simplescroll-horizontal {
+  display: none;
+}
+.CodeMirror-simplescroll-vertical {
+  position: absolute;
+  z-index: 6;
+  right: 7px;
+  top: 0;
+  opacity: 0;
+  width: 9px;
+  transition: opacity 0.2s ease;
+}
+.CodeMirror:hover .CodeMirror-simplescroll-vertical {
+  opacity: 1;
+}
+.CodeMirror-simplescroll-vertical div {
+  position: absolute;
+  background: rgba(255,255,255,0.2);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  right: 0;
+  width: 100%;
+}
+.CodeMirror-overlayscroll .CodeMirror-scrollbar-filler,
+.CodeMirror-overlayscroll .CodeMirror-gutter-filler {
+  display: none;
+}
+.CodeMirror pre {
+  padding: 0 16px 0 4px;
+}
+.cm-s-default .cm-header {
+  font-weight: bold;
+}
+.cm-s-default .cm-strong {
+  font-weight: bold;
+}
+.cm-s-default .cm-em {
+  font-style: italic;
+}
+.cm-s-default .cm-searching {
+  background: black;
+  outline: 2px solid rgba(255, 255, 255, 0.25);
+}
+.cm-s-default .cm-keyword {
+  color: #FF8342;
+}
+.cm-s-default .cm-atom {
+  color: #ddca7e;
+}
+.box-html .cm-s-default .cm-atom {
+  color: #96b38a;
+}
+.cm-s-default .cm-number {
+  color: #d0782a;
+}
+.cm-s-default .cm-unit {
+  color: #d0782a;
+}
+.cm-s-default .cm-def {
+  color: #809bbd;
+}
+.cm-s-default .cm-variable {
+  color: #ddca7e;
+}
+.cm-s-default .cm-variable-2 {
+  color: #809bbd;
+}
+.cm-s-default .cm-variable-3 {
+  color: #fff;
+}
+.cm-s-default .cm-property {
+  color: #9a8297;
+}
+.cm-s-default .cm-operator {
+  color: #ccc;
+}
+.cm-s-default .cm-comment {
+  color: #666;
+}
+.cm-s-default .cm-string {
+  color: #96b38a;
+}
+.cm-s-default .cm-string-2 {
+  color: #fff;
+}
+.cm-s-default .cm-meta {
+  color: #9a8297;
+}
+.cm-s-default .cm-header {
+  color: #FF6400;
+}
+.cm-s-default .cm-tag {
+  color: #9a6e35;
+}
+.box-css .cm-s-default .cm-tag {
+  color: #ddca7e;
+}
+.cm-s-default .cm-attribute {
+  color: #ddca7e;
+}
+.cm-s-default .cm-strong {
+  color: #ddca7e;
+}
+.cm-s-default .cm-em {
+  color: #ddca7e;
+}
+.cm-s-default .cm-qualifier {
+  color: #ddca7e;
+}
+.cm-s-default .cm-builtin {
+  color: #ddca7e;
+}
+.cm-s-default .cm-error {
+  color: #F00;
+}
+
+/* Autocomplete styles */
+/* imported from https://github.com/codemirror/CodeMirror/blob/master/addon/hint/show-hint.css */
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 9999999;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  border:none;
+
+  background: #1f1f1f;
+  font-size: 12px;
+  font-family: monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: white;
+  cursor: pointer;
+  transition:all 0.2s;
+}
+
+.CodeMirror-hint:not(.CodeMirror-hint-active):hover{
+  background:rgba(255,255,255,0.2);
+}
+
+li.CodeMirror-hint-active {
+  background: #4CAF50;
+  color: white;
+}

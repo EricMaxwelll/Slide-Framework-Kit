@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example background-video-actions — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Background Video Actions -->
+<!-- 1) copy scripts -->
+<script>
+/* button to mute a background sound */
+$(function(){
+  //mute button
+  $('.muteToggle').click(function(){
+    var $this = $(this),
+        $video = $this.parents('.slide').find('video');
+
+    if ($video.prop('muted') === true){
+      $video.prop('muted', false);
+      $this.text('Mute');
+    } else {
+      $video.prop('muted', true);
+      $this.text('Unmute');
+    }
+  });
+});
+
+/* pause video on slide change */
+$(window).on('slideChange',function(event, number, element){
+  var $videoElement = $('.slide.video.autoStop');
+
+  if ($videoElement.length > 0) {
+    $videoElement.each(function(){
+      var $element = $(this);
+      if ($element.index('section.slide') + 1 == number) {
+        $element.find('video')[0].play();
+      } else {
+        $element.find('video')[0].pause();
+      }
+    });
+  }
+});
+</script>
+
+<!-- Slide example with video background with sound -->
+<section class="slide fade-6 video autoStop">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <button class="button muteToggle">Mute</button>
+      </div>
+    </div>
+  </div>
+  <div class="background">
+    <video loop poster="http://media.w3.org/2010/05/sintel/poster.png" controls>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"/>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm"/>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"/>
+    </video>
+  </div>
+</section>
+
+<section class="slide fade-6">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="ae-1"><p>Background videos above and below are paused</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide example with video background with sound -->
+<section class="slide fade-6 video autoStop">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <button class="button muteToggle">Mute</button>
+      </div>
+    </div>
+  </div>
+  <div class="background">
+    <video loop poster="http://media.w3.org/2010/05/sintel/poster.png" controls>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"/>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm"/>
+      <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg"/>
+    </video>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

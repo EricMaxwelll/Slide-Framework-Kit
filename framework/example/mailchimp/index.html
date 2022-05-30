@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example mailchimp — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Mailchimp -->
+<!-- How to find your Mailchimp URL: http://cl.ly/fWJw -->
+<!-- Thanks to Sid Doshi for an awesome jquery plugin: https://github.com/scdoshi/jquery-ajaxchimp -->
+
+<!-- (1) Copy scripts -->
+<script src="https://rawcdn.githack.com/scdoshi/jquery-ajaxchimp/47c0beaa/jquery.ajaxchimp.min.js"></script>
+<script>
+  $(function(){
+    $('#subscribe').ajaxChimp({
+      url: '//shmidt.us6.list-manage.com/subscribe/post?u=5d54431b146badbe1a4c8ac4d&amp;id=3027294fbf',
+      callback: callbackFunction,
+      language: 'custom'
+    });
+
+    //custom messages
+    $.ajaxChimp.translations.custom = {
+      'submit': 'Submitting...',
+      0: 'Thank you for the subscription!',
+      1: 'Please enter your email',
+      2: 'An email address must contain a single @',
+      3: 'The domain portion of the email address is invalid (the portion after the @: )',
+      4: 'The username portion of the email address is invalid (the portion before the @: )',
+      5: 'This email address looks fake or invalid. Please enter a real email address'
+    };
+
+    //js function on success
+    function callbackFunction (resp) {
+      if (resp.result === 'success') {
+        $('input[name="subscribe-submit"]').attr('value', 'Check email').addClass('green');
+      }
+    }
+  });
+</script>
+
+<!-- (2) Copy styles -->
+<style>
+  .subscribe-message {
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    max-width:462px;
+    margin:0 auto;
+    border-radius:4px;
+          
+    /* animation */  
+    -webkit-transform:scale(0);
+    transform:scale(0);
+    opacity:0;
+    max-height:0;
+    padding:0;
+    border-width:0;
+    
+    -webkit-transition:0.5s;
+    transition:0.5s;
+  }
+  .subscribe-message a { font-weight:600; }
+  .subscribe-message.valid,
+  .subscribe-message.error {
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    max-height:132px;
+    opacity:1;
+    padding:14px 20px;
+    border:2px solid;
+    margin-top: 20px;
+  }
+</style>
+
+<!-- (3) Copy layout based on Slide #38  -->
+<section class="slide whiteSlide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-5-12">
+          <div class="ae-1">
+            <p class="largest">Mailchimp Ajax Form Integration</p>
+          </div>
+          <div>
+            <!-- Be sure you keep this form layout as it is. You can change the rest -->
+            <form class="slides-form ae-2 fix-4-12" id="subscribe">
+              <input type="email" value="" name="subscribe-email" id="subscribe-email" placeholder="Your e-mail" class="wide"/>
+              <button type="submit" value="" name="subscribe-submit" class="wide button blue gradient">Get Updates</button>
+              <label for="subscribe-email" class="subscribe-message"></label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

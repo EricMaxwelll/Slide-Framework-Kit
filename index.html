@@ -1,0 +1,1006 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!doctype html>
+
+<!-- Elemento HTML Raíz -->
+<html lang="es">
+
+<!-- Provee información general (metadatos) acerca del documento-->
+<head>
+
+    <!--Informa al navegador cual es la codificación del set de caracteres utilizada en el documento -->
+    <meta charset="UTF-8">
+
+    <!-- Parte del documento que usted está viendo, la cual es actualmente visible en su ventana ( o la pantalla, si el documento está siendo visto en modo pantalla completa )-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+    <!-- Elemento para que se vea sin ningún marco del navegador en pantalla, gracias a la cual lograremos ese aspecto app-like -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Especifica una URL predeterminada y un destino predeterminado para todos los enlaces de una página-->
+    <base href="./">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="256x256" href="https://programadoreschile.org/assets/img/pages/logo/favicon.png">
+
+    <!-- Define un título para este Documento HTML5-->
+    <title>Slide Starter Kit | Tu primer Building</title>
+
+    <!-- CSS Styles -->
+    <link href="assets/css/slides.css" rel="stylesheet" type="text/css">
+
+    <!-- Example CSS -->
+    <link href="framework/index_files/generator.min.css" rel="stylesheet">
+
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Material+Icons&display=swap"/>
+
+    <!-- jQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Javascript Scripts -->
+    <script src="assets/js/slides.js" type="text/javascript"></script>
+    <script src="assets/js/plugins.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+
+    <!-- Metadata Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slidestarterkit.com">
+    <meta property="og:title" content="Titulo | Subtitulo">
+    <meta property="og:description" content="Description | More">
+    <meta property="og:image" content="assets/img/cover.png">
+
+    <!-- Metadata Twitter  -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://slidestarterkit.com">
+    <meta property="twitter:title" content="Titulo | Subtitulo">
+    <meta property="twitter:description" content="Description | More">
+    <meta property="twitter:image" content="assets/img/cover.png">
+
+</head>
+
+<!-- Elemento que contiene el cotenido de un documento HTML y solo puede haber 1 Body -->
+<body class="slides scroll smoothScroll animateOnEvent">
+
+
+<!-- Puntos de Navegación Lateral -->
+<nav class="side stroke">
+  <div class="navigation default">
+    <ul></ul>
+  </div>
+</nav>
+
+
+<!-- Barra de progreso de carga -->
+<div class="progress-bar pink" style="height: 8px"></div>
+
+
+
+<!-- Navbar -->
+<nav class="panel top">
+    <div class="sections desktop">
+
+        <div class="left"></div>
+
+        <div class="center">
+
+
+            <a href="/" class="button small pink weight-6" >Home</a>
+            <a href="/framework" class="button small indigo weight-6" >Framework</a>
+            <a href="/framework/slide/background" class="button small black weight-6" >Background</a>
+            <a href="/framework/slide/white" class="button small white weight-6" >White</a>
+            <a data-popup-id="examples" class="button small blue popupTrigger blue weight-6" >Examples</a>
+
+
+
+
+        </div>
+
+        <div class="right"></div>
+
+
+    </div>
+
+    <div class="sections compact hidden">
+
+        <div class="left">
+            <a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+        </div>
+
+        <div class="right">
+            <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<!-- Sidebar -->
+<nav class="sidebar" data-sidebar-id="1">
+    <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+    <div class="content">
+        <a href="#" class="logo"><svg width="100" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+        <ul class="mainMenu margin-top-3">
+            <li><a href="#">All Goods</a></li>
+            <li><a href="#">UI Kits</a></li>
+            <li><a href="#">Icons</a></li>
+            <li><a href="#">Mockups</a></li>
+            <li><a href="#">Toolkit</a></li>
+        </ul>
+        <ul class="subMenu small opacity-8">
+            <li><a href="#">Submit Product</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="social opacity-8">
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<!-- White Slide 1 -->
+<section class="slide whiteSlide" data-title="Slide #1 (03)" data-name="slide-03-690d513c">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+
+
+        <div class="fix-8-12">
+
+            <h1 class="weight-9 ">Slide Framework KIT 5.2</h1>
+
+            <div class="fix-6-12">
+                <span class="large  ae-2 margin-">Bienvenido a Slide Framework 5.2</span> <br>
+                <span class="large  ae-2 margin-0">Crea tus proyectos con este completo kit de Diseño Web</span>
+            </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer #09 -->
+<nav class="panel bottom lastSlideOnly">
+  <div class="sections">
+    <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!--// Ejemplos-->
+<div class="popup" data-popup-id="examples">
+
+    <div class="close"><svg style="width:24px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/#close"></use></svg></div>
+
+    <div class="content popupContent">
+        <div class="container">
+
+
+            <div class="wrap top padding-top-8 padding-bottom-8">
+                <div class="fix-12-12 left">
+
+
+
+
+                    <h1 class="margin-bottom-3">Ejemplos</h1>
+
+                    <p class="light fix-8-12 toLeft margin-bottom-1">A continuación se muestra una lista extensa de características y módulos que se han desarrollado para demostrar el poder, la flexibilidad y la creatividad integrados en Slide Framework.</p>
+                    <hr class="cropTop margin-bottom-3 margin-top-3 relative wide" style=" left: 0; border-bottom: 1px; opacity: 0.1; ">
+                    <div class="column-container">
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/accordion/" title="Preview: Accordion Example">Accordion</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-accordion">
+                                <a class="copy-example" data-copy-html="example-accordion" data-copy-element="example" data-example-id="accordion" data-example-name="Accordion">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/accordion/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-accordion"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/animated-on-scroll/" title="Preview: Animated On Scroll Example">Animated On Scroll</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-animated-on-scroll">
+                                <a class="copy-example" data-copy-html="example-animated-on-scroll" data-copy-element="example" data-example-id="animated-on-scroll" data-example-name="Animated On Scroll">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/animated-on-scroll/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-animated-on-scroll"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/animated-popup/" title="Preview: Animated Popup Example">Animated Popup</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-animated-popup">
+                                <a class="copy-example" data-copy-html="example-animated-popup" data-copy-element="example" data-example-id="animated-popup" data-example-name="Animated Popup">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/animated-popup/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-animated-popup"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/animation-delay/" title="Preview: Animation Delay Example">Animation Delay</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-animation-delay">
+                                <a class="copy-example" data-copy-html="example-animation-delay" data-copy-element="example" data-example-id="animation-delay" data-example-name="Animation Delay">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/animation-delay/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-animation-delay"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/animations/" title="Preview: Animations Example">Animations</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-animations">
+                                <a class="copy-example" data-copy-html="example-animations" data-copy-element="example" data-example-id="animations" data-example-name="Animations">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/animations/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-animations"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-3d-rotation/" title="Preview: Background 3d Rotation Example">Background 3d Rotation</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-3d-rotation">
+                                <a class="copy-example" data-copy-html="example-background-3d-rotation" data-copy-element="example" data-example-id="background-3d-rotation" data-example-name="Background 3d Rotation">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-3d-rotation/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-3d-rotation"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-animation/" title="Preview: Background Animation Example">Background Animation</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-animation">
+                                <a class="copy-example" data-copy-html="example-background-animation" data-copy-element="example" data-example-id="background-animation" data-example-name="Background Animation">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-animation/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-animation"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-color-animation/" title="Preview: Background Color Animation Example">Background Color Animation</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-color-animation">
+                                <a class="copy-example" data-copy-html="example-background-color-animation" data-copy-element="example" data-example-id="background-color-animation" data-example-name="Background Color Animation">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-color-animation/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-color-animation"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-effects/" title="Preview: Background Effects Example">Background Effects</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-effects">
+                                <a class="copy-example" data-copy-html="example-background-effects" data-copy-element="example" data-example-id="background-effects" data-example-name="Background Effects">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-effects/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-effects"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-fade/" title="Preview: Background Fade Example">Background Fade</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-fade">
+                                <a class="copy-example" data-copy-html="example-background-fade" data-copy-element="example" data-example-id="background-fade" data-example-name="Background Fade">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-fade/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-fade"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-gradient/" title="Preview: Background Gradient Example">Background Gradient</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-gradient">
+                                <a class="copy-example" data-copy-html="example-background-gradient" data-copy-element="example" data-example-id="background-gradient" data-example-name="Background Gradient">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-gradient/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-gradient"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-slideshow/" title="Preview: Background Slideshow Example">Background Slideshow</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-slideshow">
+                                <a class="copy-example" data-copy-html="example-background-slideshow" data-copy-element="example" data-example-id="background-slideshow" data-example-name="Background Slideshow">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-slideshow/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-slideshow"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-video-actions/" title="Preview: Background Video Actions Example">Background Video Actions</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-video-actions">
+                                <a class="copy-example" data-copy-html="example-background-video-actions" data-copy-element="example" data-example-id="background-video-actions" data-example-name="Background Video Actions">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-video-actions/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-video-actions"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-video-autoplay/" title="Preview: Background Video Autoplay Example">Background Video Autoplay</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-video-autoplay">
+                                <a class="copy-example" data-copy-html="example-background-video-autoplay" data-copy-element="example" data-example-id="background-video-autoplay" data-example-name="Background Video Autoplay">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-video-autoplay/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-video-autoplay"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-video/" title="Preview: Background Video Example">Background Video</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-video">
+                                <a class="copy-example" data-copy-html="example-background-video" data-copy-element="example" data-example-id="background-video" data-example-name="Background Video">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-video/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-video"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-vimeo/" title="Preview: Background Vimeo Example">Background Vimeo</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-vimeo">
+                                <a class="copy-example" data-copy-html="example-background-vimeo" data-copy-element="example" data-example-id="background-vimeo" data-example-name="Background Vimeo">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-vimeo/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-vimeo"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/background-youtube/" title="Preview: Background Youtube Example">Background Youtube</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-background-youtube">
+                                <a class="copy-example" data-copy-html="example-background-youtube" data-copy-element="example" data-example-id="background-youtube" data-example-name="Background Youtube">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/background-youtube/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-background-youtube"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/before-after/" title="Preview: Before/after Example">Before/after</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-before-after">
+                                <a class="copy-example" data-copy-html="example-before-after" data-copy-element="example" data-example-id="before-after" data-example-name="Before/after">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/before-after/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-before-after"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/buttons/" title="Preview: Buttons Example">Buttons</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-buttons">
+                                <a class="copy-example" data-copy-html="example-buttons" data-copy-element="example" data-example-id="buttons" data-example-name="Buttons">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/buttons/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-buttons"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/canvas/" title="Preview: Canvas Example">Canvas</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-canvas">
+                                <a class="copy-example" data-copy-html="example-canvas" data-copy-element="example" data-example-id="canvas" data-example-name="Canvas">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/canvas/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-canvas"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/changelog/" title="Preview: Changelog Example">Changelog</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-changelog">
+                                <a class="copy-example" data-copy-html="example-changelog" data-copy-element="example" data-example-id="changelog" data-example-name="Changelog">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/changelog/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-changelog"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/chaport/" title="Preview: Chaport Example">Chaport</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-chaport">
+                                <a class="copy-example" data-copy-html="example-chaport" data-copy-element="example" data-example-id="chaport" data-example-name="Chaport">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/chaport/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-chaport"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/chartist/" title="Preview: Chartist Example">Chartist</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-chartist">
+                                <a class="copy-example" data-copy-html="example-chartist" data-copy-element="example" data-example-id="chartist" data-example-name="Chartist">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/chartist/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-chartist"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/chrome-os-mobile-scroll/" title="Preview: Chrome Os Mobile Scroll Example">Chrome Os Mobile Scroll</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-chrome-os-mobile-scroll">
+                                <a class="copy-example" data-copy-html="example-chrome-os-mobile-scroll" data-copy-element="example" data-example-id="chrome-os-mobile-scroll" data-example-name="Chrome Os Mobile Scroll">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/chrome-os-mobile-scroll/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-chrome-os-mobile-scroll"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/colors/" title="Preview: Colors Example">Colors</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-colors">
+                                <a class="copy-example" data-copy-html="example-colors" data-copy-element="example" data-example-id="colors" data-example-name="Colors">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/colors/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-colors"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/contact-form-success/" title="Preview: Contact Form Success Example">Contact Form Success</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-contact-form-success">
+                                <a class="copy-example" data-copy-html="example-contact-form-success" data-copy-element="example" data-example-id="contact-form-success" data-example-name="Contact Form Success">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/contact-form-success/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-contact-form-success"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/contact-form-validation/" title="Preview: Contact Form Validation Example">Contact Form Validation</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-contact-form-validation">
+                                <a class="copy-example" data-copy-html="example-contact-form-validation" data-copy-element="example" data-example-id="contact-form-validation" data-example-name="Contact Form Validation">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/contact-form-validation/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-contact-form-validation"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/contact-form/" title="Preview: Contact Form Example">Contact Form</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-contact-form">
+                                <a class="copy-example" data-copy-html="example-contact-form" data-copy-element="example" data-example-id="contact-form" data-example-name="Contact Form">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/contact-form/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-contact-form"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/css-animation/" title="Preview: Css Animation Example">Css Animation</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-css-animation">
+                                <a class="copy-example" data-copy-html="example-css-animation" data-copy-element="example" data-example-id="css-animation" data-example-name="Css Animation">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/css-animation/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-css-animation"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/custom-checkbox/" title="Preview: Custom Checkbox Example">Custom Checkbox</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-custom-checkbox">
+                                <a class="copy-example" data-copy-html="example-custom-checkbox" data-copy-element="example" data-example-id="custom-checkbox" data-example-name="Custom Checkbox">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/custom-checkbox/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-custom-checkbox"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/custom-scrollbar/" title="Preview: Custom Scrollbar Example">Custom Scrollbar</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-custom-scrollbar">
+                                <a class="copy-example" data-copy-html="example-custom-scrollbar" data-copy-element="example" data-example-id="custom-scrollbar" data-example-name="Custom Scrollbar">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/custom-scrollbar/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-custom-scrollbar"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/dialog/" title="Preview: Dialog Example">Dialog</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-dialog">
+                                <a class="copy-example" data-copy-html="example-dialog" data-copy-element="example" data-example-id="dialog" data-example-name="Dialog">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/dialog/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-dialog"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/disqus/" title="Preview: Disqus Example">Disqus</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-disqus">
+                                <a class="copy-example" data-copy-html="example-disqus" data-copy-element="example" data-example-id="disqus" data-example-name="Disqus">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/disqus/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-disqus"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/dropdown/" title="Preview: Dropdown Example">Dropdown</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-dropdown">
+                                <a class="copy-example" data-copy-html="example-dropdown" data-copy-element="example" data-example-id="dropdown" data-example-name="Dropdown">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/dropdown/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-dropdown"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/effect-change/" title="Preview: Effect Change Example">Effect Change</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-effect-change">
+                                <a class="copy-example" data-copy-html="example-effect-change" data-copy-element="example" data-example-id="effect-change" data-example-name="Effect Change">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/effect-change/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-effect-change"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/effect-shake/" title="Preview: Effect Shake Example">Effect Shake</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-effect-shake">
+                                <a class="copy-example" data-copy-html="example-effect-shake" data-copy-element="example" data-example-id="effect-shake" data-example-name="Effect Shake">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/effect-shake/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-effect-shake"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/fake-parallax-transition/" title="Preview: Fake Parallax Transition Example">Fake Parallax Transition</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-fake-parallax-transition">
+                                <a class="copy-example" data-copy-html="example-fake-parallax-transition" data-copy-element="example" data-example-id="fake-parallax-transition" data-example-name="Fake Parallax Transition">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/fake-parallax-transition/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-fake-parallax-transition"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/flex-custom-cell/" title="Preview: Flex Custom Cell Example">Flex Custom Cell</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-flex-custom-cell">
+                                <a class="copy-example" data-copy-html="example-flex-custom-cell" data-copy-element="example" data-example-id="flex-custom-cell" data-example-name="Flex Custom Cell">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/flex-custom-cell/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-flex-custom-cell"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/flex/" title="Preview: Flex Example">Flex</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-flex">
+                                <a class="copy-example" data-copy-html="example-flex" data-copy-element="example" data-example-id="flex" data-example-name="Flex">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/flex/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-flex"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/footer/" title="Preview: Footer Example">Footer</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-footer">
+                                <a class="copy-example" data-copy-html="example-footer" data-copy-element="example" data-example-id="footer" data-example-name="Footer">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/footer/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-footer"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/full-width-image/" title="Preview: Full Width Image Example">Full Width Image</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-full-width-image">
+                                <a class="copy-example" data-copy-html="example-full-width-image" data-copy-element="example" data-example-id="full-width-image" data-example-name="Full Width Image">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/full-width-image/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-full-width-image"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/fullscreen-toggle/" title="Preview: Fullscreen Toggle Example">Fullscreen Toggle</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-fullscreen-toggle">
+                                <a class="copy-example" data-copy-html="example-fullscreen-toggle" data-copy-element="example" data-example-id="fullscreen-toggle" data-example-name="Fullscreen Toggle">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/fullscreen-toggle/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-fullscreen-toggle"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/hash-link/" title="Preview: Hash Link Example">Hash Link</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-hash-link">
+                                <a class="copy-example" data-copy-html="example-hash-link" data-copy-element="example" data-example-id="hash-link" data-example-name="Hash Link">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/hash-link/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-hash-link"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/icons/" title="Preview: Icons Example">Icons</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-icons">
+                                <a class="copy-example" data-copy-html="example-icons" data-copy-element="example" data-example-id="icons" data-example-name="Icons">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/icons/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-icons"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/instagram/" title="Preview: Instagram Example">Instagram</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-instagram">
+                                <a class="copy-example" data-copy-html="example-instagram" data-copy-element="example" data-example-id="instagram" data-example-name="Instagram">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/instagram/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-instagram"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/intercom/" title="Preview: Intercom Example">Intercom</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-intercom">
+                                <a class="copy-example" data-copy-html="example-intercom" data-copy-element="example" data-example-id="intercom" data-example-name="Intercom">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/intercom/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-intercom"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/lazyload/" title="Preview: Lazyload Example">Lazyload</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-lazyload">
+                                <a class="copy-example" data-copy-html="example-lazyload" data-copy-element="example" data-example-id="lazyload" data-example-name="Lazyload">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/lazyload/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-lazyload"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/link/" title="Preview: Link Example">Link</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-link">
+                                <a class="copy-example" data-copy-html="example-link" data-copy-element="example" data-example-id="link" data-example-name="Link">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/link/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-link"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/lists/" title="Preview: Lists Example">Lists</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-lists">
+                                <a class="copy-example" data-copy-html="example-lists" data-copy-element="example" data-example-id="lists" data-example-name="Lists">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/lists/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-lists"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/long-content/" title="Preview: Long Content Example">Long Content</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-long-content">
+                                <a class="copy-example" data-copy-html="example-long-content" data-copy-element="example" data-example-id="long-content" data-example-name="Long Content">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/long-content/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-long-content"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/mailchimp/" title="Preview: Mailchimp Example">Mailchimp</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-mailchimp">
+                                <a class="copy-example" data-copy-html="example-mailchimp" data-copy-element="example" data-example-id="mailchimp" data-example-name="Mailchimp">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/mailchimp/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-mailchimp"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/maps/" title="Preview: Maps Example">Maps</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-maps">
+                                <a class="copy-example" data-copy-html="example-maps" data-copy-element="example" data-example-id="maps" data-example-name="Maps">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/maps/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-maps"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/multilingual/" title="Preview: Multilingual Example">Multilingual</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-multilingual">
+                                <a class="copy-example" data-copy-html="example-multilingual" data-copy-element="example" data-example-id="multilingual" data-example-name="Multilingual">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/multilingual/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-multilingual"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/multipage-1/" title="Preview: Multipage 1 Example">Multipage 1</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-multipage-1">
+                                <a class="copy-example" data-copy-html="example-multipage-1" data-copy-element="example" data-example-id="multipage-1" data-example-name="Multipage 1">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/multipage-1/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-multipage-1"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/multipage-2/" title="Preview: Multipage 2 Example">Multipage 2</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-multipage-2">
+                                <a class="copy-example" data-copy-html="example-multipage-2" data-copy-element="example" data-example-id="multipage-2" data-example-name="Multipage 2">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/multipage-2/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-multipage-2"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/navigation-compact/" title="Preview: Compact Nav Example">Compact Nav</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-navigation-compact">
+                                <a class="copy-example" data-copy-html="example-navigation-compact" data-copy-element="example" data-example-id="navigation-compact" data-example-name="Compact Nav">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/navigation-compact/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-navigation-compact"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/navigation-skip-slides/" title="Preview: Navigation Skip Slides Example">Navigation Skip Slides</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-navigation-skip-slides">
+                                <a class="copy-example" data-copy-html="example-navigation-skip-slides" data-copy-element="example" data-example-id="navigation-skip-slides" data-example-name="Navigation Skip Slides">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/navigation-skip-slides/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-navigation-skip-slides"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/navigation-sub-items/" title="Preview: Navigation Sub Items Example">Navigation Sub Items</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-navigation-sub-items">
+                                <a class="copy-example" data-copy-html="example-navigation-sub-items" data-copy-element="example" data-example-id="navigation-sub-items" data-example-name="Navigation Sub Items">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/navigation-sub-items/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-navigation-sub-items"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/navigation-text/" title="Preview: Navigation Text Example">Navigation Text</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-navigation-text">
+                                <a class="copy-example" data-copy-html="example-navigation-text" data-copy-element="example" data-example-id="navigation-text" data-example-name="Navigation Text">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/navigation-text/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-navigation-text"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/owl-carousel/" title="Preview: Owl Carousel Example">Owl Carousel</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-owl-carousel">
+                                <a class="copy-example" data-copy-html="example-owl-carousel" data-copy-element="example" data-example-id="owl-carousel" data-example-name="Owl Carousel">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/owl-carousel/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-owl-carousel"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-change-on-scroll/" title="Preview: Panel Change On Scroll Example">Panel Change On Scroll</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-change-on-scroll">
+                                <a class="copy-example" data-copy-html="example-panel-change-on-scroll" data-copy-element="example" data-example-id="panel-change-on-scroll" data-example-name="Panel Change On Scroll">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-change-on-scroll/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-change-on-scroll"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-colors/" title="Preview: Panel Colors Example">Panel Colors</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-colors">
+                                <a class="copy-example" data-copy-html="example-panel-colors" data-copy-element="example" data-example-id="panel-colors" data-example-name="Panel Colors">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-colors/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-colors"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-custom-visibility/" title="Preview: Panel Custom Visibility Example">Panel Custom Visibility</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-custom-visibility">
+                                <a class="copy-example" data-copy-html="example-panel-custom-visibility" data-copy-element="example" data-example-id="panel-custom-visibility" data-example-name="Panel Custom Visibility">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-custom-visibility/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-custom-visibility"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-dropdown/" title="Preview: Panel Dropdown Example">Panel Dropdown</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-dropdown">
+                                <a class="copy-example" data-copy-html="example-panel-dropdown" data-copy-element="example" data-example-id="panel-dropdown" data-example-name="Panel Dropdown">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-dropdown/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-dropdown"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-hide-on-scroll/" title="Preview: Panel Hide On Scroll Example">Panel Hide On Scroll</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-hide-on-scroll">
+                                <a class="copy-example" data-copy-html="example-panel-hide-on-scroll" data-copy-element="example" data-example-id="panel-hide-on-scroll" data-example-name="Panel Hide On Scroll">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-hide-on-scroll/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-hide-on-scroll"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-mega-menu/" title="Preview: Panel Mega Menu Example">Panel Mega Menu</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-mega-menu">
+                                <a class="copy-example" data-copy-html="example-panel-mega-menu" data-copy-element="example" data-example-id="panel-mega-menu" data-example-name="Panel Mega Menu">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-mega-menu/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-mega-menu"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-menu/" title="Preview: Panel Menu Example">Panel Menu</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-menu">
+                                <a class="copy-example" data-copy-html="example-panel-menu" data-copy-element="example" data-example-id="panel-menu" data-example-name="Panel Menu">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-menu/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-menu"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-raster-logo/" title="Preview: Panel Raster Logo Example">Panel Raster Logo</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-raster-logo">
+                                <a class="copy-example" data-copy-html="example-panel-raster-logo" data-copy-element="example" data-example-id="panel-raster-logo" data-example-name="Panel Raster Logo">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-raster-logo/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-raster-logo"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-scrollable/" title="Preview: Panel Scrollable Example">Panel Scrollable</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-scrollable">
+                                <a class="copy-example" data-copy-html="example-panel-scrollable" data-copy-element="example" data-example-id="panel-scrollable" data-example-name="Panel Scrollable">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-scrollable/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-scrollable"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-submenu-2/" title="Preview: Panel Submenu 2 Example">Panel Submenu 2</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-submenu-2">
+                                <a class="copy-example" data-copy-html="example-panel-submenu-2" data-copy-element="example" data-example-id="panel-submenu-2" data-example-name="Panel Submenu 2">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-submenu-2/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-submenu-2"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panel-submenu/" title="Preview: Panel Submenu Example">Panel Submenu</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panel-submenu">
+                                <a class="copy-example" data-copy-html="example-panel-submenu" data-copy-element="example" data-example-id="panel-submenu" data-example-name="Panel Submenu">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panel-submenu/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panel-submenu"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/panorama-image/" title="Preview: Panorama Image Example">Panorama Image</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-panorama-image">
+                                <a class="copy-example" data-copy-html="example-panorama-image" data-copy-element="example" data-example-id="panorama-image" data-example-name="Panorama Image">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/panorama-image/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-panorama-image"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/parallax/" title="Preview: Parallax Example">Parallax</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-parallax">
+                                <a class="copy-example" data-copy-html="example-parallax" data-copy-element="example" data-example-id="parallax" data-example-name="Parallax">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/parallax/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-parallax"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-auto-reveal/" title="Preview: Popup Auto Reveal Example">Popup Auto Reveal</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-auto-reveal">
+                                <a class="copy-example" data-copy-html="example-popup-auto-reveal" data-copy-element="example" data-example-id="popup-auto-reveal" data-example-name="Popup Auto Reveal">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-auto-reveal/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-auto-reveal"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-data-src/" title="Preview: Popup Data Src Example">Popup Data Src</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-data-src">
+                                <a class="copy-example" data-copy-html="example-popup-data-src" data-copy-element="example" data-example-id="popup-data-src" data-example-name="Popup Data Src">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-data-src/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-data-src"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-hash-link/" title="Preview: Popup Hash Link Example">Popup Hash Link</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-hash-link">
+                                <a class="copy-example" data-copy-html="example-popup-hash-link" data-copy-element="example" data-example-id="popup-hash-link" data-example-name="Popup Hash Link">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-hash-link/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-hash-link"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-iframe/" title="Preview: Popup Iframe Example">Popup Iframe</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-iframe">
+                                <a class="copy-example" data-copy-html="example-popup-iframe" data-copy-element="example" data-example-id="popup-iframe" data-example-name="Popup Iframe">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-iframe/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-iframe"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-slider/" title="Preview: Popup Slider Example">Popup Slider</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-slider">
+                                <a class="copy-example" data-copy-html="example-popup-slider" data-copy-element="example" data-example-id="popup-slider" data-example-name="Popup Slider">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-slider/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-slider"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-video-gallery/" title="Preview: Popup Video Gallery Example">Popup Video Gallery</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-video-gallery">
+                                <a class="copy-example" data-copy-html="example-popup-video-gallery" data-copy-element="example" data-example-id="popup-video-gallery" data-example-name="Popup Video Gallery">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-video-gallery/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-video-gallery"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup-zoom/" title="Preview: Popup Zoom Example">Popup Zoom</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup-zoom">
+                                <a class="copy-example" data-copy-html="example-popup-zoom" data-copy-element="example" data-example-id="popup-zoom" data-example-name="Popup Zoom">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup-zoom/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup-zoom"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/popup/" title="Preview: Popup Example">Popup</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-popup">
+                                <a class="copy-example" data-copy-html="example-popup" data-copy-element="example" data-example-id="popup" data-example-name="Popup">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/popup/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-popup"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/preloader-progress-bar/" title="Preview: Preloader Progress Bar Example">Preloader Progress Bar</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-preloader-progress-bar">
+                                <a class="copy-example" data-copy-html="example-preloader-progress-bar" data-copy-element="example" data-example-id="preloader-progress-bar" data-example-name="Preloader Progress Bar">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/preloader-progress-bar/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-preloader-progress-bar"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/premade-styles/" title="Preview: Premade Styles Example">Premade Styles</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-premade-styles">
+                                <a class="copy-example" data-copy-html="example-premade-styles" data-copy-element="example" data-example-id="premade-styles" data-example-name="Premade Styles">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/premade-styles/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-premade-styles"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/prevent-slide-change/" title="Preview: Prevent Slide Change Example">Prevent Slide Change</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-prevent-slide-change">
+                                <a class="copy-example" data-copy-html="example-prevent-slide-change" data-copy-element="example" data-example-id="prevent-slide-change" data-example-name="Prevent Slide Change">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/prevent-slide-change/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-prevent-slide-change"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/progress-bar/" title="Preview: Progress Bar Example">Progress Bar</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-progress-bar">
+                                <a class="copy-example" data-copy-html="example-progress-bar" data-copy-element="example" data-example-id="progress-bar" data-example-name="Progress Bar">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/progress-bar/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-progress-bar"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/recaptcha/" title="Preview: Recaptcha Example">Recaptcha</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-recaptcha">
+                                <a class="copy-example" data-copy-html="example-recaptcha" data-copy-element="example" data-example-id="recaptcha" data-example-name="Recaptcha">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/recaptcha/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-recaptcha"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/responsive-images/" title="Preview: Responsive Images Example">Responsive Images</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-responsive-images">
+                                <a class="copy-example" data-copy-html="example-responsive-images" data-copy-element="example" data-example-id="responsive-images" data-example-name="Responsive Images">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/responsive-images/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-responsive-images"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/responsive-table/" title="Preview: Responsive Table Example">Responsive Table</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-responsive-table">
+                                <a class="copy-example" data-copy-html="example-responsive-table" data-copy-element="example" data-example-id="responsive-table" data-example-name="Responsive Table">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/responsive-table/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-responsive-table"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/rolling-element/" title="Preview: Rolling Element Example">Rolling Element</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-rolling-element">
+                                <a class="copy-example" data-copy-html="example-rolling-element" data-copy-element="example" data-example-id="rolling-element" data-example-name="Rolling Element">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/rolling-element/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-rolling-element"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/share/" title="Preview: Share Example">Share</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-share">
+                                <a class="copy-example" data-copy-html="example-share" data-copy-element="example" data-example-id="share" data-example-name="Share">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/share/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-share"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/show-more-items/" title="Preview: Show More Items Example">Show More Items</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-show-more-items">
+                                <a class="copy-example" data-copy-html="example-show-more-items" data-copy-element="example" data-example-id="show-more-items" data-example-name="Show More Items">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/show-more-items/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-show-more-items"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/showcases/" title="Preview: Showcases Example">Showcases</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-showcases">
+                                <a class="copy-example" data-copy-html="example-showcases" data-copy-element="example" data-example-id="showcases" data-example-name="Showcases">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/showcases/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-showcases"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/sidebar-submenu/" title="Preview: Sidebar Submenu Example">Sidebar Submenu</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-sidebar-submenu">
+                                <a class="copy-example" data-copy-html="example-sidebar-submenu" data-copy-element="example" data-example-id="sidebar-submenu" data-example-name="Sidebar Submenu">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/sidebar-submenu/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-sidebar-submenu"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/sidebars/" title="Preview: Sidebars Example">Sidebars</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-sidebars">
+                                <a class="copy-example" data-copy-html="example-sidebars" data-copy-element="example" data-example-id="sidebars" data-example-name="Sidebars">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/sidebars/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-sidebars"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slick-slider/" title="Preview: Slick Slider Example">Slick Slider</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slick-slider">
+                                <a class="copy-example" data-copy-html="example-slick-slider" data-copy-element="example" data-example-id="slick-slider" data-example-name="Slick Slider">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slick-slider/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slick-slider"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slide-32-flipped/" title="Preview: Slide 32 Flipped Example">Slide 32 Flipped</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slide-32-flipped">
+                                <a class="copy-example" data-copy-html="example-slide-32-flipped" data-copy-element="example" data-example-id="slide-32-flipped" data-example-name="Slide 32 Flipped">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slide-32-flipped/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slide-32-flipped"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slide-75-exact-image-size/" title="Preview: Slide 75 Exact Image Size Example">Slide 75 Exact Image Size</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slide-75-exact-image-size">
+                                <a class="copy-example" data-copy-html="example-slide-75-exact-image-size" data-copy-element="example" data-example-id="slide-75-exact-image-size" data-example-name="Slide 75 Exact Image Size">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slide-75-exact-image-size/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slide-75-exact-image-size"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slide-color-switch/" title="Preview: Slide Color Switch Example">Slide Color Switch</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slide-color-switch">
+                                <a class="copy-example" data-copy-html="example-slide-color-switch" data-copy-element="example" data-example-id="slide-color-switch" data-example-name="Slide Color Switch">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slide-color-switch/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slide-color-switch"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slide-inline-video/" title="Preview: Slide Inline Video Example">Slide Inline Video</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slide-inline-video">
+                                <a class="copy-example" data-copy-html="example-slide-inline-video" data-copy-element="example" data-example-id="slide-inline-video" data-example-name="Slide Inline Video">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slide-inline-video/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slide-inline-video"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider-accordion/" title="Preview: Slider Accordion Example">Slider Accordion</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider-accordion">
+                                <a class="copy-example" data-copy-html="example-slider-accordion" data-copy-element="example" data-example-id="slider-accordion" data-example-name="Slider Accordion">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider-accordion/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider-accordion"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider-autoplay/" title="Preview: Slider Autoplay Example">Slider Autoplay</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider-autoplay">
+                                <a class="copy-example" data-copy-html="example-slider-autoplay" data-copy-element="example" data-example-id="slider-autoplay" data-example-name="Slider Autoplay">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider-autoplay/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider-autoplay"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider-fullscreen/" title="Preview: Slider Fullscreen Example">Slider Fullscreen</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider-fullscreen">
+                                <a class="copy-example" data-copy-html="example-slider-fullscreen" data-copy-element="example" data-example-id="slider-fullscreen" data-example-name="Slider Fullscreen">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider-fullscreen/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider-fullscreen"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider-gallery/" title="Preview: Slider Gallery Example">Slider Gallery</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider-gallery">
+                                <a class="copy-example" data-copy-html="example-slider-gallery" data-copy-element="example" data-example-id="slider-gallery" data-example-name="Slider Gallery">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider-gallery/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider-gallery"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider-pill-tabs/" title="Preview: Slider Pill Tabs Example">Slider Pill Tabs</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider-pill-tabs">
+                                <a class="copy-example" data-copy-html="example-slider-pill-tabs" data-copy-element="example" data-example-id="slider-pill-tabs" data-example-name="Slider Pill Tabs">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider-pill-tabs/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider-pill-tabs"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slider/" title="Preview: Slider Example">Slider</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slider">
+                                <a class="copy-example" data-copy-html="example-slider" data-copy-element="example" data-example-id="slider" data-example-name="Slider">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slider/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slider"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slides-autoplay/" title="Preview: Slides Autoplay Example">Slides Autoplay</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slides-autoplay">
+                                <a class="copy-example" data-copy-html="example-slides-autoplay" data-copy-element="example" data-example-id="slides-autoplay" data-example-name="Slides Autoplay">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slides-autoplay/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slides-autoplay"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/slideshow/" title="Preview: Slideshow Example">Slideshow</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-slideshow">
+                                <a class="copy-example" data-copy-html="example-slideshow" data-copy-element="example" data-example-id="slideshow" data-example-name="Slideshow">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/slideshow/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-slideshow"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/sound-for-each-slide/" title="Preview: Sound For Each Slide Example">Sound For Each Slide</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-sound-for-each-slide">
+                                <a class="copy-example" data-copy-html="example-sound-for-each-slide" data-copy-element="example" data-example-id="sound-for-each-slide" data-example-name="Sound For Each Slide">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/sound-for-each-slide/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-sound-for-each-slide"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/sound-mute-on-scroll/" title="Preview: Sound Mute On Scroll Example">Sound Mute On Scroll</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-sound-mute-on-scroll">
+                                <a class="copy-example" data-copy-html="example-sound-mute-on-scroll" data-copy-element="example" data-example-id="sound-mute-on-scroll" data-example-name="Sound Mute On Scroll">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/sound-mute-on-scroll/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-sound-mute-on-scroll"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/sound/" title="Preview: Sound Example">Sound</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-sound">
+                                <a class="copy-example" data-copy-html="example-sound" data-copy-element="example" data-example-id="sound" data-example-name="Sound">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/sound/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-sound"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/soundcloud/" title="Preview: Soundcloud Example">Soundcloud</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-soundcloud">
+                                <a class="copy-example" data-copy-html="example-soundcloud" data-copy-element="example" data-example-id="soundcloud" data-example-name="Soundcloud">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/soundcloud/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-soundcloud"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/split/" title="Preview: Split Example">Split</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-split">
+                                <a class="copy-example" data-copy-html="example-split" data-copy-element="example" data-example-id="split" data-example-name="Split">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/split/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-split"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/three-js/" title="Preview: Three Js Example">Three Js</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-three-js">
+                                <a class="copy-example" data-copy-html="example-three-js" data-copy-element="example" data-example-id="three-js" data-example-name="Three Js">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/three-js/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-three-js"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/tilt/" title="Preview: Tilt Example">Tilt</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-tilt">
+                                <a class="copy-example" data-copy-html="example-tilt" data-copy-element="example" data-example-id="tilt" data-example-name="Tilt">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/tilt/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-tilt"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/tooltip/" title="Preview: Tooltip Example">Tooltip</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-tooltip">
+                                <a class="copy-example" data-copy-html="example-tooltip" data-copy-element="example" data-example-id="tooltip" data-example-name="Tooltip">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/tooltip/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-tooltip"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/trigger/" title="Preview: Trigger Example">Trigger</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-trigger">
+                                <a class="copy-example" data-copy-html="example-trigger" data-copy-element="example" data-example-id="trigger" data-example-name="Trigger">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/trigger/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-trigger"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/twitter/" title="Preview: Twitter Example">Twitter</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-twitter">
+                                <a class="copy-example" data-copy-html="example-twitter" data-copy-element="example" data-example-id="twitter" data-example-name="Twitter">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/twitter/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-twitter"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/typed/" title="Preview: Typed Example">Typed</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-typed">
+                                <a class="copy-example" data-copy-html="example-typed" data-copy-element="example" data-example-id="typed" data-example-name="Typed">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/typed/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-typed"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/typeform/" title="Preview: Typeform Example">Typeform</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-typeform">
+                                <a class="copy-example" data-copy-html="example-typeform" data-copy-element="example" data-example-id="typeform" data-example-name="Typeform">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/typeform/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-typeform"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/typekit-fonts/" title="Preview: Typekit Fonts Example">Typekit Fonts</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-typekit-fonts">
+                                <a class="copy-example" data-copy-html="example-typekit-fonts" data-copy-element="example" data-example-id="typekit-fonts" data-example-name="Typekit Fonts">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/typekit-fonts/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-typekit-fonts"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/typewriter/" title="Preview: Typewriter Example">Typewriter</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-typewriter">
+                                <a class="copy-example" data-copy-html="example-typewriter" data-copy-element="example" data-example-id="typewriter" data-example-name="Typewriter">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/typewriter/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-typewriter"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container starred"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/typography/" title="Preview: Typography Example">Typography</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-typography">
+                                <a class="copy-example" data-copy-html="example-typography" data-copy-element="example" data-example-id="typography" data-example-name="Typography">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/typography/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-typography"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container plugin"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/unsplash/" title="Preview: Unsplash Example">Unsplash</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-unsplash">
+                                <a class="copy-example" data-copy-html="example-unsplash" data-copy-element="example" data-example-id="unsplash" data-example-name="Unsplash">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/unsplash/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-unsplash"><i class="material-icons"></i></span>
+                        </div>
+                        <div class="link-container"><a target="_blank" href="https://designmodo.com/slides/app/preview/example/webgl/" title="Preview: Webgl Example">Webgl</a>
+                            <div class="dropdown bottom right" data-dropdown-id="example-webgl">
+                                <a class="copy-example" data-copy-html="example-webgl" data-copy-element="example" data-example-id="webgl" data-example-name="Webgl">Copy HTML</a> <a target="_blank" href="https://designmodo.com/slides/app/example/webgl/download/">Download</a>
+                            </div>
+                            <span class="options dropdownTrigger" data-dropdown-id="example-webgl"><i class="material-icons"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- SVG Library  -->
+<svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none" id="customSvgLibrary">
+  <symbol id="logo" viewBox="0 0 106 31"><title>Slides Framework</title><path d="M17.413 14.04c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52zm2.222 15.96h6.64v-29.6h-6.64v29.6zm9.662-24.56h6.64v-5.04h-6.64v5.04zm0 24.56h6.64v-22.2h-6.64v22.2zm32.782-29.6h-6.64v9.28c-.72-.72-2.6-2.64-6.52-2.64-5.64 0-11 4.28-11 11.8 0 6.68 4.4 11.88 11.12 11.88 4.48 0 6.08-2.2 6.72-3.12v2.4h6.32v-29.6zm-17.52 18.4c0-2.56 1.8-5.56 5.64-5.56 1.56 0 2.96.56 3.96 1.56 1 .96 1.64 2.32 1.64 3.92.08 1.64-.52 3.08-1.56 4.12s-2.52 1.68-4.12 1.68c-3.12 0-5.56-2.28-5.56-5.68v-.04zm42.502 2.4c.52-4.08-.32-7.64-3.12-10.64-2.08-2.2-5-3.52-8.4-3.52-6.76 0-11.64 5.72-11.64 11.92 0 6.6 5.4 11.76 11.76 11.76 2.28 0 4.48-.68 6.32-2 1.88-1.28 3.44-3.2 4.52-5.68h-6.8c-.8 1.16-1.92 2.08-4.04 2.08-2.6 0-4.84-1.56-5.12-3.92h16.52zm-16.44-5.04c.16-1.04 1.52-3.52 4.96-3.52s4.8 2.48 4.96 3.52h-9.92zm34.502-2.12c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52z"/></symbol>
+  <symbol id="close" viewBox="0 0 30 30"><path d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z"/></symbol>
+  <symbol id="arrow-left" viewBox="0 0 29 56"><path d="M28.7.3c.4.4.4 1 0 1.4l-26.3 26.3 26.3 26.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-27-27c-.4-.4-.4-1 0-1.4l27-27c.3-.3 1-.4 1.4 0z"/></symbol>
+  <symbol id="arrow-right" viewBox="0 0 29 56"><path d="M.3 55.7c-.4-.4-.4-1 0-1.4l26.3-26.3-26.3-26.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l27 27c.4.4.4 1 0 1.4l-27 27c-.3.3-1 .4-1.4 0z"/></symbol>
+  <symbol id="back" viewBox="0 0 20 20"><path d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h-11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2-.3.5-.3.7 0 .2.1.5.3.7z"/></symbol>
+  <symbol id="menu" viewBox="0 0 18 18"><path d="M16 5h-14c-.6 0-1-.4-1-1 0-.5.4-1 1-1h14c.5 0 1 .4 1 1s-.4 1-1 1zm-14 5h14c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-14c-.6 0-1 .4-1 1s.4 1 1 1zm14 3h-14c-.5 0-1 .4-1 1 0 .5.4 1 1 1h14c.5 0 1-.4 1-1s-.4-1-1-1z"/></symbol>
+  <symbol id="share" viewBox="0 0 18 18"><path d="M16 8c-.6 0-1 .4-1 1v6h-12v-6c0-.6-.4-1-1-1s-1 .4-1 1v6c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-6c0-.6-.4-1-1-1zm-2.3-2.3c.4-.4.4-1 0-1.4l-4-4c-.4-.4-1-.4-1.4 0l-4 4c-.4.4-.4 1 0 1.4s1 .4 1.4 0l2.3-2.3v7.6c0 .6.4 1 1 1s1-.4 1-1v-7.6l2.3 2.3c.4.4 1 .4 1.4 0z"/></symbol>
+  <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 18c-.2 0-.5-.1-.7-.3l-11-10c-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1l10.4 9.4 10.3-9.4c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-11 10c-.1.2-.4.3-.6.3z"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M11.9 5.9c.2 0 .5.1.7.3l11 10c.4.4.4 1 .1 1.4-.4.4-1 .4-1.4.1l-10.4-9.4-10.3 9.4c-.4.4-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4l11-10c.1-.2.4-.3.6-.3z"/></symbol>
+  <symbol id="arrow-top" viewBox="0 0 18 18"><path d="M15.7 7.3l-6-6c-.4-.4-1-.4-1.4 0l-6 6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l4.3-4.3v11.6c0 .6.4 1 1 1s1-.4 1-1v-11.6l4.3 4.3c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z"/></symbol>
+  <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"/></symbol>
+  <symbol id="chat" viewBox="0 0 18 18"><path d="M5,17c-0.2,0-0.3,0-0.4-0.1C4.2,16.7,4,16.4,4,16v-2H2c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v9 c0,1.1-0.9,2-2,2H9.3l-3.7,2.8C5.4,16.9,5.2,17,5,17z M2,12h3.5C5.8,12,6,12.2,6,12.5V14l2.4-1.8C8.6,12.1,8.8,12,9,12h7V3H2V12z M13,7H5C4.4,7,4,6.6,4,6s0.4-1,1-1h8c0.6,0,1,0.4,1,1S13.6,7,13,7z M13,10H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h8c0.6,0,1,0.4,1,1 S13.6,10,13,10z"/></symbol>
+  <symbol id="mail" viewBox="0 0 18 18"><path d="M16 2h-14c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm0 2v.5l-7 4.3-7-4.4v-.4h14zm-14 10v-7.2l6.5 4c.1.1.3.2.5.2s.4-.1.5-.2l6.5-4v7.2h-14z"/></symbol>
+  <symbol id="sound-on" viewBox="0 0 18 18"><path d="M8.5,0.1C8.1-0.1,7.7,0,7.4,0.2L3.7,3H2C0.9,3,0,3.9,0,5v6c0,1.1,0.9,2,2,2h1.7l3.7,2.8C7.6,15.9,7.8,16,8,16 c0.2,0,0.3,0,0.4-0.1C8.8,15.7,9,15.4,9,15V1C9,0.6,8.8,0.3,8.5,0.1z M7,13l-2.4-1.8C4.4,11.1,4.2,11,4,11l-2,0l0-6h2 c0.2,0,0.4-0.1,0.6-0.2L7,3V13z M11.7,9.9l0.7,1.9C13.9,11.2,15,9.7,15,8c0-1.7-1.1-3.2-2.7-3.8l-0.7,1.9C12.5,6.4,13,7.2,13,8C13,8.9,12.5,9.6,11.7,9.9z M12.2,1.1l-0.3,2C14.3,3.5,16,5.6,16,8s-1.8,4.5-4.2,4.9l0.3,2C15.6,14.3,18,11.4,18,8C18,4.6,15.6,1.7,12.2,1.1z"/></symbol>
+  <symbol id="sound-off" viewBox="0 0 18 18"><path d="M15.9,8l1.8-1.8c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-1.8,1.8l-1.8-1.8c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L13.1,8l-1.8,1.8 c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.8-1.8l1.8,1.8c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L15.9,8z M8.5,0.1C8.1-0.1,7.7,0,7.4,0.2L3.7,3H2C0.9,3,0,3.9,0,5v6c0,1.1,0.9,2,2,2h1.7l3.7,2.8C7.6,15.9,7.8,16,8,16 c0.2,0,0.3,0,0.4-0.1C8.8,15.7,9,15.4,9,15V1C9,0.6,8.8,0.3,8.5,0.1z M7,13l-2.4-1.8C4.4,11.1,4.2,11,4,11l-2,0l0-6h2 c0.2,0,0.4-0.1,0.6-0.2L7,3V13z"/></symbol>
+
+  <!-- social -->
+  <symbol id="apple" viewBox="-1 1 24 24"><path d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4-1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2-1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z"/></symbol>
+  <symbol id="dribbble" viewBox="0 0 24 24"><path d="M12 0c-6.7 0-12 5.3-12 12s5.3 12 12 12 12-5.3 12-12-5.3-12-12-12zm7.9 5.7c1.3 1.7 2.1 3.9 2.3 6.1-.4-.1-2.4-.4-4.7-.4-.8 0-1.5 0-2.3.1 0-.1-.1-.3-.3-.5l-.7-1.5c3.7-1.4 5.3-3.4 5.7-3.8zm-7.9-3.8c2.5 0 4.9.9 6.7 2.5-.3.4-1.9 2.3-5.2 3.6-1.6-2.9-3.3-5.3-3.7-5.9.6-.1 1.4-.2 2.2-.2zm-4.4 1c.4.6 2.1 3 3.7 5.8-4.4 1.2-8.2 1.2-9.2 1.2h-.1c.8-3.1 2.9-5.6 5.6-7zm-5.7 9.1v-.3h.3c1.2 0 5.6-.1 10.1-1.5l.8 1.6c-.1 0-.3 0-.4.1-5.1 1.6-7.9 6-8.3 6.7-1.6-1.7-2.5-4.1-2.5-6.6zm10.1 10.1c-2.3 0-4.4-.8-6.1-2.1.3-.5 2.4-4.4 7.9-6.3 1.3 3.6 2 6.7 2.1 7.6-1.2.6-2.6.8-3.9.8zm5.7-1.8c-.1-.8-.7-3.6-2-7.1.7-.1 1.3-.1 2-.1 2.1 0 3.7.4 4.1.5-.3 2.8-1.8 5.2-4.1 6.7z"/></symbol>
+  <symbol id="facebook" viewBox="0 0 24 24"><path d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v-3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6-1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z"/></symbol>
+  <symbol id="facebook2" viewBox="0 0 512 512"><path d="M288 176v-64c0-17.664 14.336-32 32-32h32v-80h-64c-53.024 0-96 42.976-96 96v80h-64v80h64v256h96v-256h64l32-80h-96z"/></symbol>
+  <symbol id="fb-like" viewBox="0 0 20 20"><path d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8-.8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5-.3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3-1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1 .3v3.5l-2.7 4.4v9.8z"/></symbol>
+  <symbol id="googlePlus" viewBox="0 1 24 24"><path d="M7.8 13.5h4.6c-.6 2-2.5 3.4-4.6 3.4-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9c1.1 0 2.1.3 3 1l1.8-2.4c-1.4-1.1-3-1.6-4.8-1.6-4.3 0-7.9 3.5-7.9 7.9s3.5 7.9 7.9 7.9 7.9-3.5 7.9-7.9v-1.5h-7.9v3zM21.7 11v-2.2h-2v2.2h-2.2v2h2.2v2.2h2v-2.2h2.2v-2z"/></symbol>
+  <symbol id="instagram" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.3"/><path d="M13,0H7C2.2,0,0,2.2,0,7v6c0,4.8,2.1,7,7,7h6c4.8,0,7-2.2,7-7V7C20,2.2,17.9,0,13,0z M10,15.1c-2.8,0-5.1-2.3-5.1-5.1 S7.2,4.9,10,4.9s5.1,2.3,5.1,5.1S12.8,15.1,10,15.1z M15.3,5.9c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2 C16.5,5.3,16,5.9,15.3,5.9z"/></symbol>
+  <symbol id="behance" viewBox="0 0 511.958 511.958"><path d="M210.624 240.619c10.624-5.344 18.656-11.296 24.16-17.728 9.792-11.584 14.624-26.944 14.624-45.984 0-18.528-4.832-34.368-14.496-47.648-16.128-21.632-43.424-32.704-82.016-33.28h-152.896v312.096h142.56c16.064 0 30.944-1.376 44.704-4.192 13.76-2.848 25.664-8.064 35.744-15.68 8.96-6.624 16.448-14.848 22.4-24.544 9.408-14.656 14.112-31.264 14.112-49.76 0-17.92-4.128-33.184-12.32-45.728-8.288-12.544-20.448-21.728-36.576-27.552zm-147.552-90.432h68.864c15.136 0 27.616 1.632 37.408 4.864 11.328 4.704 16.992 14.272 16.992 28.864 0 13.088-4.32 22.24-12.864 27.392-8.608 5.152-19.776 7.744-33.472 7.744h-76.928v-68.864zm108.896 198.24c-7.616 3.68-18.336 5.504-32.064 5.504h-76.832v-83.232h77.888c13.568.096 24.128 1.888 31.68 5.248 13.44 6.08 20.128 17.216 20.128 33.504 0 19.2-6.912 32.128-20.8 38.976zM327.168 110.539h135.584v38.848h-135.584zM509.856 263.851c-2.816-18.08-9.024-33.984-18.688-47.712-10.592-15.552-24.032-26.944-40.384-34.144-16.288-7.232-34.624-10.848-55.04-10.816-34.272 0-62.112 10.72-83.648 32-21.472 21.344-32.224 52.032-32.224 92.032 0 42.656 11.872 73.472 35.744 92.384 23.776 18.944 51.232 28.384 82.4 28.384 37.728 0 67.072-11.232 88.032-33.632 13.408-14.144 20.992-28.064 22.656-41.728h-62.464c-3.616 6.752-7.808 12.032-12.608 15.872-8.704 7.04-20.032 10.56-33.92 10.56-13.216 0-24.416-2.912-33.76-8.704-15.424-9.28-23.488-25.536-24.512-48.672h170.464c.256-19.936-.384-35.264-2.048-45.824zm-166.88 5.984c2.24-15.008 7.68-26.912 16.32-35.712 8.64-8.768 20.864-13.184 36.512-13.216 14.432 0 26.496 4.128 36.32 12.416 9.696 8.352 15.168 20.48 16.288 36.512h-105.44z"/></symbol>
+  <symbol id="linkedin" viewBox="0 0 24 24"><path d="M5.9 21.9h-4.7v-14.2h4.7v14.2zm-2.3-16.1c-1.6 0-2.6-1.1-2.6-2.5s1-2.5 2.7-2.5c1.6 0 2.6 1 2.6 2.5-.1 1.4-1.2 2.5-2.7 2.5zm19.2 16.1h-4.7v-7.6c0-2-.7-3.3-2.3-3.3-1.3 0-2.1.9-2.5 1.7-.1.3-.1.8-.1 1.2v7.9h-4.7v-14.1h4.7v2c.7-.9 1.7-2.3 4.3-2.3 3.1 0 5.5 2.1 5.5 6.4v8.2h-.2z"/></symbol>
+  <symbol id="medium" viewBox="0 0 130.8 104"><path d="M15.5 21.2c.2-1.6-.5-3.2-1.7-4.3l-12.1-14.7v-2.2h38l29.3 64.4 25.8-64.4h36.2v2.2l-10.5 10c-.9.7-1.3 1.8-1.2 2.9v73.7c0 1.1.3 2.2 1.2 2.9l10.2 10v2.2h-51.3v-2.2l10.6-10.2c1-1 1-1.3 1-2.9v-59.6l-29.4 74.7h-4l-34.2-74.7v50.3c0 2.2.4 4.2 1.9 5.7l13.7 16.8v2.2h-39v-2.2l13.8-16.7c1.5-1.5 1.8-3.3 1.8-5.7l-.1-58.2z"/></symbol>
+  <symbol id="pinterest" viewBox="0 0 24 24"><path d="M5.9 13.9c1.2-2-.4-2.5-.6-4-1-6.1 7.1-10.2 11.4-6 2.9 2.9 1 12-3.7 11-4.6-.9 2.2-8.1-1.4-9.5-3-1.1-4.6 3.6-3.2 5.9-.8 4-2.5 7.7-1.8 12.7 2.3-1.7 3.1-4.8 3.7-8.1 1.2.7 1.8 1.4 3.3 1.5 5.5.4 8.6-5.4 7.8-10.7-.7-4.7-5.5-7.1-10.6-6.6-4.1.4-8.1 3.7-8.3 8.3-.1 2.8.7 4.9 3.4 5.5z"/></symbol>
+  <symbol id="stumbleupon" viewBox="0 0 24 24"><path d="M13.3 9.6l1.6.8 2.5-.8v-1.4c0-3-2.4-5.4-5.4-5.4s-5.4 2.4-5.4 5.4v7.5c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2h-4v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-7.5c0-.7.6-1.3 1.3-1.3s1.3.6 1.3 1.3l-.1 1.4zm6.6 2.9v3.2c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2l-2.5.8-1.6-.8v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-3.2h-4.1z"/></symbol>
+  <symbol id="twitter" viewBox="0 1 24 23"><path d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z"/></symbol>
+  <symbol id="tumblr" viewBox="0 0 23 23"><path d="M12.573 4.94v-4.94h-3.188c-.072.183-.11.4-.11.622-.034.107-.072.184-.072.293-.328 1.829-1.28 3.11-2.892 3.807-.476.218-.914.253-1.39.218v3.987h2.342c.039 5.603.039 8.493.039 8.64v.332c.294 2.449 1.573 3.914 3.843 4.463.914.257 1.901.366 2.892.366 1.279-.036 2.525-.256 3.771-.659v-4.685c-.731.22-1.395.402-1.977.583-1.135.333-2.087.113-2.857-.619-.073-.11-.183-.257-.221-.403-.106-.586-.178-1.206-.178-1.795v-6.222h5.083v-3.988h-5.085z"/></symbol>
+  <symbol id="xing" viewBox="0 0 24 24"><path d="M3.647 4.74c-.208 0-.384.073-.472.216-.091.148-.077.338.02.531l2.34 4.051v.02l-3.678 6.49c-.096.191-.091.383 0 .531.088.142.244.236.452.236h3.461c.518 0 .767-.349.944-.669l3.737-6.608-2.38-4.15c-.172-.307-.433-.649-.964-.649h-3.46zm14.542-4.74c-.517 0-.741.326-.927.659l-7.702 13.658 4.918 9.023c.172.307.437.659.967.659h3.457c.208 0 .371-.079.459-.221.092-.148.09-.343-.007-.535l-4.88-8.915v-.023l7.664-13.551c.096-.191.098-.386.007-.534-.088-.142-.252-.221-.46-.221h-3.496z"/></symbol>
+  <symbol id="whatsapp" viewBox="0 0 512 512"><path d="M256.064 0h-.128c-141.152 0-255.936 114.816-255.936 256 0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.832 42.304 141.152 0 255.936-114.848 255.936-256s-114.784-256-255.936-256zm148.96 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"/></symbol>
+  <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
+
+</svg>
+
+</body>
+</html>

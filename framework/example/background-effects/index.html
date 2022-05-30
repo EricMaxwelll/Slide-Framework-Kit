@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example background-effects — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Background Effects -->
+<!-- Scenic -->
+<section class="slide fade-6 scenic" data-name="scenic">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Scenic</h1>
+          <p>Background picture will zoom in and out during whole five minutes. It provides a movie-like style & feel for your slide.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-01.jpg)"></div>
+</section>
+
+<!-- Ken Burns -->
+<section class="slide fade-6 kenBurns" data-name="kenburns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Ken Burns</h1>
+          <p>The Ken Burns effect is a type of panning and zooming effect used in video production from still imagery.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-24.jpg)"></div>
+</section>
+
+<!-- Ken Burns Zoomout -->
+<section class="slide fade-6 kenBurns zoomin" data-name="kenBurnsinverce">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Ken Burns Zoom In</h1>
+          <p>The Ken Burns effect is a type of panning and zooming effect used in video production from still imagery.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-26.jpg)"></div>
+</section>
+
+<!-- Parallax -->
+<section class="slide fade-6 parallax" data-name="parallax">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Parallax</h1>
+          <p>Parallax is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-27.jpg)"></div>
+</section>
+
+<section class="slide fade-6 parallax" data-name="parallax">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Parallax</h1>
+          <p>Parallax is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background parllaxElement" data-parallax-velocity="70" style="background-image:url(assets/img/background/img-28.jpg)"></div>
+</section>
+
+<!-- class attachmentFixed doesn't work with slide effects -->
+<section class="slide fade-6 attachment-fixed" data-name="Fixed" style="background-image:url(assets/img/background/img-28.jpg);">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <div class="fix-6-12 to-left">
+          <h1>Fixed Attachment</h1>
+          <p>Fix the image on the background when page is scrolled. It will work only with <a href="/slides/app/preview/example/background-effects/?effect=scroll" class="underline">Scroll Effect</a>.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ignore -->
+<style>
+.slides .panel.top {
+  background: rgba(10,11,12,.85);
+  box-shadow:0 1px 1px rgba(0,0,0,0.20);
+  color: #fff;
+}
+.slides.scroll .menuToggle.scrollEffectToggle,
+.slides:not(.scroll) .menuToggle.slideEffectToggle { background: rgba(123, 123, 123, 0.5); padding: 11px 7px; margin: -5px 0 !important; border-radius: 5px; }
+.slides.scroll .menuToggle.scrollEffectToggle *,
+.slides:not(.scroll) .menuToggle.slideEffectToggle * { cursor: default !important; opacity:1; pointer-events:none;}
+</style>
+
+<nav class="panel top small fixed hideOnScroll firstSlideOnly">
+  <div class="sections">
+    <div class="center">
+      <ul class="menu small uppercase">
+        <li class="menuToggle scrollEffectToggle"><a href="/slides/app/preview/example/background-effects/?effect=scroll">Scroll Effect</a></li>
+        <li class="menuToggle slideEffectToggle"><a href="/slides/app/preview/example/background-effects/">Slide Effect</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

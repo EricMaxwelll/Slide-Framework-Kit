@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example panel-raster-logo — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Panel Raster Logo -->
+<!-- 1) Copy styles -->
+<style>
+/* STYLES FOR PNG LOGO */
+.logoHolder {
+   position:relative;
+   top:-25%;
+   display:block;
+}
+.whiteLogo,
+.blackLogo {
+   position:absolute;
+   left:0;
+   top:0;
+   opacity:0;
+   -webkit-transition:opacity 0.5s;
+   transition:opacity 0.5s;
+}
+.slides.whiteSlide .blackLogo,
+.slides:not(.whiteSlide) .whiteLogo {
+   opacity:1;
+}
+
+/* STYLES FOR TEXT LOGO */
+.textLogo {
+	font-size: 33px;
+	letter-spacing: -1px;
+	font-weight: 600;
+}
+</style>
+
+<!-- Panel Example -->
+<nav class="panel top small">
+  <div class="sections">
+    <div class="left">
+      <a href="#" class="logoHolder"> 
+        <!-- set your images for bright and dark screens -->
+        <img src="https://cl.ly/krnU/white-logo.png" alt="Image" class="whiteLogo" height="30"/>
+        <img src="https://cl.ly/ksS4/black-logo.png" alt="Image" class="blackLogo" height="30"/>
+      </a>
+    </div>
+    <div class="right">
+        <!-- or use text as logo as well -->
+      <div class="textLogo selectable">simple<span class="light">text</span></div>
+    </div>
+  </div>
+</nav>
+
+<!-- Black slide example -->
+<section class="slide fade-6">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <p>Use PNG image or text as a logo</p>
+        
+      </div>
+    </div> 
+  </div>
+</section>
+
+<!-- White slide example -->
+<section class="slide whiteSlide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <p>Works on dark and bright slides</p>
+        
+      </div>
+    </div> 
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

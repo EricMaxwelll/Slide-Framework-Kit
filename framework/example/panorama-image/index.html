@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example panorama-image — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Panorama Image -->
+<!-- 1) copy scripts -->
+<script src="https://cdn.rawgit.com/peachananr/panorama_viewer/master/jquery.panorama_viewer.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script>
+$(function() {
+  //panorama settings
+  $(".panorama").panorama_viewer({
+    repeat: true,
+    direction: "horizontal",
+    animationTime: 700,
+    easing: "ease-out",
+    overlay: false
+  }).on('click touchmove', function() {
+    //stop on click or drag
+    $(this).addClass('hover');
+    window.autoscroll = 0;
+  });
+  
+  $(window).on('load', function(){
+    //start a smooth pan
+     window.moveSlidesInterval = setInterval(function() {
+        if ($('.slide.allSlides').hasClass('selected') && (!$('.slide.selected .panorama').hasClass('hover'))) {
+           var el = $(".panorama").find(".pv-inner"),
+              $el = $(el),
+              bgPos = $el.css('background-position');
+  
+           if (bgPos.indexOf('%') > -1) {
+              bgPos = "-1px 0px";
+           } else {
+              bgPos = parseInt(bgPos.split("px ")[0]) - 10 + "px 0px";
+           }
+  
+           $el.css('background-position', bgPos);
+        }
+     }, 100);
+  }).on('slideChange',function(){
+    //continue to pan on slide change
+    $('.slide.allSlides .panorama').removeClass('hover')
+  });
+});
+</script>
+
+<!-- 2) copy styles -->
+<style>
+  .pv-inner {
+    display: inline-block;
+    cursor: move;
+    cursor: drag;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    height: 100% !important;
+    width: 100% !important;
+    background-size: cover !important;
+  }
+  .panorama {
+    /* set your height */
+    height: 897px !important;
+  }
+  .panorama img {
+     opacity:0;
+  }
+</style>
+
+<!-- 3) copy the layout -->
+<section class="slide allSlides whiteSlide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap noSpaces" style="padding:50px 0;">
+        <div class="panorama"><img src="https://designmodo.com/wp-content/themes/designmodov2.1/custom-pages/slides/presentation/img/background-white.jpg" alt="panorama"/></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

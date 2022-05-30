@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example navigation-sub-items — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+<!-- Navigation -->
+<nav class="side ">
+  <div class="navigation default">
+    <ul></ul>
+  </div>
+</nav>
+<!-- EXAMPLE: Navigation Sub Items -->
+<style>
+/* hide selected dots (2,3,4,6,7,9) by default */
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(6),
+li:nth-child(7),
+li:nth-child(8),
+li:nth-child(9) {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  height: 0;
+}
+
+/* show small dots for "sub-slides" */
+li:nth-child(2):after,
+li:nth-child(3):after,
+li:nth-child(4):after,
+li:nth-child(6):after,
+li:nth-child(7):after,
+li:nth-child(8):after,
+li:nth-child(9):after {
+  -webkit-transform: scale(0.45);
+  transform: scale(0.45);
+}
+
+/* show dots for selected stages */
+
+/* slide 2 selected */
+.stage-2 .navigation li:nth-child(2),
+.stage-2 .navigation li:nth-child(3),
+.stage-2 .navigation li:nth-child(4),
+
+.stage-3 .navigation li:nth-child(2),
+.stage-3 .navigation li:nth-child(3),
+.stage-3 .navigation li:nth-child(4),
+
+.stage-4 .navigation li:nth-child(2),
+.stage-4 .navigation li:nth-child(3),
+.stage-4 .navigation li:nth-child(4),
+
+.stage-5 .navigation li:nth-child(6),
+.stage-5 .navigation li:nth-child(7),
+.stage-5 .navigation li:nth-child(8),
+.stage-5 .navigation li:nth-child(9),
+
+.stage-6 .navigation li:nth-child(6),
+.stage-6 .navigation li:nth-child(7),
+.stage-6 .navigation li:nth-child(8),
+.stage-6 .navigation li:nth-child(9),
+
+.stage-7 .navigation li:nth-child(6),
+.stage-7 .navigation li:nth-child(7),
+.stage-7 .navigation li:nth-child(8),
+.stage-7 .navigation li:nth-child(9),
+
+.stage-8 .navigation li:nth-child(6),
+.stage-8 .navigation li:nth-child(7),
+.stage-8 .navigation li:nth-child(8),
+.stage-8 .navigation li:nth-child(9),
+
+.stage-9 .navigation li:nth-child(6),
+.stage-9 .navigation li:nth-child(7),
+.stage-9 .navigation li:nth-child(8),
+.stage-9 .navigation li:nth-child(9) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  height: 33px;
+}
+</style>
+
+<!-- Your slides below -->
+<section class="slide whiteSlide" data-title="Slide #1">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 1
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #2">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 2
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #3">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 3
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #4">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 4
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #5">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 5
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #6">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 6
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #7">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 7
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #8">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 8
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #9">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 9
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide whiteSlide" data-title="Slide #10">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        Slide 10
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

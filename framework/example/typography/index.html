@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example typography — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides scroll animated">
+
+<!-- Navigation -->
+<nav class="side ">
+  <div class="navigation default">
+    <ul></ul>
+  </div>
+</nav>
+<!-- EXAMPLE: Typography -->
+<style>
+*[data-label] {position: relative}
+*[data-label]:hover:after {
+position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 6px 8px;
+  background: rgba(69, 85, 175, 0.95);
+  color: #FFF;
+  border-radius: 3px;
+  line-height: 1;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+  content: attr(data-label);
+}
+.pad { margin-bottom: 20px; }
+.pill.controller {
+  font-size: 0;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 6px;
+}
+.pill.controller li {
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: initial;
+}
+
+/* .pill.controller li:not(:last-child) {
+  border-right: 1px solid #ccc;
+} */
+
+.pill.controller li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.pill.controller li:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.pill.controller li.selected {
+  background: #4354b6;
+  color: #FFF;
+  border-color: #4354b6;
+  position: relative;
+  box-shadow: 0 0 0 1px #4354b6;
+}
+
+/* ALERTS */
+.alert {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 14px 18px;
+  background: rgba(69, 85, 175, 0.95);
+  color: #FFF;
+  border-radius: 5px;
+  line-height: 1;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+}
+
+.super {text-align: center;}
+.super:before {width: 40px; height: 4px; background: #FFF; border-radius: 2px; margin: 4px auto 10px; content: ""; display: block;}
+.super + * {margin-top: 20px;}
+
+.fancy {
+   line-height: 0.5;
+   display: inline-block;
+   position: relative;  
+}
+.fancy:before,
+.fancy:after {
+   content: "";
+   position: absolute;
+   height: 5px;
+   border-bottom: 1px solid white;
+   border-top: 1px solid white;
+   top: 0;
+   width: 40px;
+}
+.fancy:before {
+   right: 100%;
+   margin-right: 15px;
+}
+.fancy:after {
+   left: 100%;
+   margin-left: 15px;
+}
+
+header.title .subtitle.text-orange,
+header.title .subtitle.text-blue {opacity: 1;}
+</style>
+
+<!-- Panel Top #06 -->
+<nav class="panel top white">
+  <div class="sections desktop">
+    <div class="center">
+      <div class="fix-12-12">
+        <ul class="pill controller" data-slider-id="text">
+          <li class="selected">Headings</li>
+          <li>Font Weight</li>
+          <!--<li>Headings</li>-->
+          <li>Paragraphs</li>
+          <li>Article</li>
+          <li>Slides</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- article -->
+<section class="slide whiteSlide" contenteditable="true">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <ul class="slider fix-12-12" data-slider-id="text">
+          <li class="selected">
+            <div class="12-9-12">
+              <p class="alert info">Default heading styles and scaling classes.</p>
+            </div>
+            <ul class="flex fixedSpaces">
+              <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h1>H1</h1>
+                  <h1 class="largest">.largest</h1>
+                  <h1 class="larger">.larger</h1>
+                  <h1 class="large">.large</h1>
+                  <h1 class="small">.small</h1>
+                  <h1 class="smaller">.smaller</h1>
+                  <h1 class="smallest">.smallest</h1>
+                </div>
+              </li>
+              <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h2>H2</h2>
+                  <h2 class="largest">.largest</h2>
+                  <h2 class="larger">.larger</h2>
+                  <h2 class="large">.large</h2>
+                  <h2 class="small">.small</h2>
+                  <h2 class="smaller">.smaller</h2>
+                  <h2 class="smallest">.smallest</h2>
+                </div>
+              </li>
+              <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h3>H3</h3>
+                  <h3 class="largest">.largest</h3>
+                  <h3 class="larger">.larger</h3>
+                  <h3 class="large">.large</h3>
+                  <h3 class="small">.small</h3>
+                  <h3 class="smaller">.smaller</h3>
+                  <h3 class="smallest">.smallest</h3>
+                </div>
+              </li>
+              <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h4>H4</h4>
+                  <h4 class="largest">.largest</h4>
+                  <h4 class="larger">.larger</h4>
+                  <h4 class="large">.large</h4>
+                  <h4 class="small">.small</h4>
+                  <h4 class="smaller">.smaller</h4>
+                  <h4 class="smallest">.smallest</h4>
+                </div>
+              </li>
+			        <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h5>H5</h5>
+                  <h5 class="largest">.largest</h5>
+                  <h5 class="larger">.larger</h5>
+                  <h5 class="large">.large</h5>
+                  <h5 class="small">.small</h5>
+                  <h5 class="smaller">.smaller</h5>
+                  <h5 class="smallest">.smallest</h5>
+                </div>
+              </li>
+              <li class="col-4-12 col-tablet-1-2 margin-bottom-4">
+                <div class="card left">
+                  <h6>H6</h6>
+                  <h6 class="largest">.largest</h6>
+                  <h6 class="larger">.larger</h6>
+                  <h6 class="large">.large</h6>
+                  <h6 class="small">.small</h6>
+                  <h6 class="smaller">.smaller</h6>
+                  <h6 class="smallest">.smallest</h6>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="hide">
+            <div class="fix-12-12">
+              <p class="alert info">Use <!--.d1, .d2 or d3 to style "display text"--> .weight-X to set font weight</p>
+              
+              <h1 class="weight-1">Font Weight 100</h1>
+              <h1 class="weight-2">Font Weight 200</h1>
+              <h1 class="weight-3">Font Weight 300</h1>
+              <h1 class="weight-4">Font Weight 400</h1>
+              <h1 class="weight-5">Font Weight 500</h1>
+              <h1 class="weight-6">Font Weight 600</h1>
+              <h1 class="weight-7">Font Weight 700</h1>
+              <h1 class="weight-8">Font Weight 800</h1>
+              <h1 class="weight-9">Font Weight 900</h1>
+            </div>
+          </li>
+          <!--
+          <li class="hide">
+            <div class="fix-12-12">
+              <p class="alert info">Use H1-H6 tags for headings</p>
+              <ul class="flex fixedSpaces">
+                
+                <li class="col-8-12 col-tablet-1-2">
+                  <div class="card text left">
+                    <h1 class="d1">h1.d1</h1>
+                    <h1 class="d2">h1.d2</h1>
+                    <h1 class="d3">h1.d3</h1>
+                  </div>
+                </li>
+              
+                <li class="col-12-12">
+                  <div class="card text center">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>-->
+          <li class="hide">
+            <div class="fix-9-12">
+              <div class="text left">
+                <p class="alert info">Paragraph element (inside an "article" or ".text") with a <strong>"scaling"</strong> class applied.<br />The scalling classes can also be applied to a parent element (e.g. div) that wraps a paragraph or other elements like headings or lists.<br />Scaling classes include <strong>.largest, .larger, .large (or .largest), .small, .smaller and .smallest</strong>.</p>
+                <h4 class="small">p.largest</h4>
+                <p class="largest">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p.larger</h4>
+                <p class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p.large</h4>
+                <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p.small</h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p.smaller</h4>
+                <p class="smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="small">p.smallest</h4>
+                <p class="smallest">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </li>
+          <li class="hide">
+            <article class="text left">
+              <div class="fix-9-12">
+                <p class="alert info">Sample article / blog style page for content wrapped in an "<strong>&lt;article&gt;&lt;/article&gt;</strong>" tag or "<strong>.text</strong>" class.</p>
+                <h1>Heading 1</h1>
+                <p class="largest">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <h2>Heading 2</h2>
+                <p>Lorem Lorem ipsum <strong>bold text </strong>sit amet, <em>italics</em> consectetur adipisicing <a href="http://google.com" target="_blank" rel="noreferrer noopener">link to external site</a> elit, <a href="#">link to an internal entry</a> Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Unordered Lists</h3>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Ordered List</h3>
+                <ol>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ol>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <figure>
+                  <img src="assets/img/background/img-21.jpg" alt="Image Title" title="Image Title"/>
+                  <figcaption>image caption</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">Lorem ipsum dolor sit amet consectetur adipisicing</blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+                <p>Laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <code>
+                  <pre class="language-html">a code sample</pre>
+                </code>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <address>
+                  Written by John Doe.<br> 
+                  Visit us at:<br>
+                  Example.com<br>
+                  Box 564, Disneyland<br>
+                  USA
+                </address>
+              </div>
+            </article>
+          </li>
+          <li class="hide">
+            <ul class="flex fixedSpaces">
+              <li class="col-6-12 col-tablet-1-1">
+
+                <h2 class="header title smallest margin-bottom-3">Headers</h2>
+                <header class="title pad largest" data-label="header.title.largest">
+                  <span class="subtitle">subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad larger" data-label="header.title.larger">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad large" data-label="header.title.large">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad" data-label="header.title">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad small" data-label="header.title.small">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad smaller" data-label="header.title.smaller">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+                <header class="title pad smallest" data-label="header.title.smallest">
+                  <span class="subtitle">Subtitle</span>
+                  <h1>Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </header>
+
+              </li>
+              <li class="col-6-12 col-tablet-1-1">
+
+                <h2 class="header title smallest margin-bottom-3">Header Variations</h2>
+                <header class="title pad indigo" data-label="h1.uppercase.condensed">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase condensed">Heading</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  <footer><a href="" class="button white gradient">A Button</a><a href="" class="button gradient">A Button</a></footer>
+                </header>
+                <header class="title pad indigo" data-label="h2.uppercase.expanded">
+                  <span class="subtitle">subtitle</span>
+                  <h2 class="uppercase expanded">Heading</h2>
+                </header>
+                <header class="title pad indigo" data-label="h3.uppercase.expanded">
+                  <span class="subtitle super">subtitle</span>
+                  <h3 class="uppercase expanded">Heading</h3>
+                </header>
+                <header class="title pad indigo" data-label="h3.uppercase.expanded">
+                  <span class="subtitle fancy">subtitle</span>
+                  <h3 class="uppercase expanded">Heading</h3>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.bolder">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase bolder">Heading</h1>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.bold">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase bold">Heading</h1>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.semibold">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase semibold">Heading</h1>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.normal">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase normal">Heading</h1>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.fine">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase fine">Heading</h1>
+                </header>
+                <header class="title pad indigo" data-label="h1.uppercase.ultraFine">
+                  <span class="subtitle">subtitle</span>
+                  <h1 class="uppercase ultraFine">Heading</h1>
+                </header>
+
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

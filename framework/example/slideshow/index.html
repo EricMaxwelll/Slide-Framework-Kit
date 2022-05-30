@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example slideshow — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Slideshow -->
+<!-- 1) Copy scripts -->
+<script>
+  //settings
+  var slideshowInterval = 4000,
+      slideshowLoop = 1,
+      stopOnInteraction = 1;
+
+  $(function(){
+    window.autoSlide = setInterval(function(){
+      if ( $('body').hasClass('lastSlide') && slideshowLoop ){
+        changeSlide(1);
+      } else {
+        changeSlide('increase');
+      }
+    },slideshowInterval);
+    
+    //clear interval on slide change
+    if (stopOnInteraction){
+      $(window).on('mousewheel DOMMouseScroll keydown click',function(){
+        clearInterval(window.autoSlide);
+      });
+    }
+  });
+</script>
+
+<!-- Your slides below -->
+<section class="slide kenBurns white whiteSlide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+
+        <p>Slideshow each 4 seconds.</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+      
+        <p>Stops on click or scroll</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide kenBurns red">
+  <div class="content">
+    <div class="container">
+      <div class="wrap bottom left">
+        
+        <p>Will loop on the end</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>

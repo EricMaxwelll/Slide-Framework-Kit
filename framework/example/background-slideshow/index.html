@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="./">
+    <title>Example background-slideshow — Slides 5.0.6 Template Generator</title>
+
+    <!-- Uncompressed Styles -->
+    <link href="css/slides.min.css?506341" rel="stylesheet" type="text/css">
+    
+    
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons"/>
+    <style>
+        .slides { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Uncompressed Scripts -->
+    <script src="js/slides.js?506341" type="text/javascript"></script>
+    <script src="js/plugins.js?506341" type="text/javascript"></script>
+    
+    </head>
+<body class="slides animated">
+
+
+<!-- EXAMPLE: Background Slideshow -->
+<!-- 1) copy styles -->
+<style>
+  .slideshow .background {
+     opacity:0;
+     visibility:hidden;
+     -webkit-transition:1s;
+     transition:1s;
+  }
+  .slideshow .background.shown {
+     opacity:1;
+     visibility:visible;
+  }
+</style>
+
+<!-- 2) copy scripts -->
+<script>
+  $(function(){
+    setInterval(function(){
+      if($('.slideshow').hasClass('selected')){
+        $('.slideshow.selected .background.shown').removeClass('shown').nextOrFirst('.background').addClass('shown');
+      }
+    },4000); // <-- set your interval here
+  });
+</script>
+
+<section class="slide scenic fade-6 slideshow">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <p>Slideshow enabled (5 pics)</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- your background images are here -->
+  <div class="background shown" style="background-image:url(assets/img/background/img-01.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-02.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-03.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-04.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-05.jpg)"></div>
+</section>
+
+<section class="slide fade-6">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <p>No slideshow</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background shown" style="background-image:url(assets/img/background/img-07.jpg)"></div>
+</section>
+
+<section class="slide scenic fade-6 slideshow">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <p>Slideshow enabled (3 pics)</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- your background images are here -->
+  <div class="background shown" style="background-image:url(assets/img/background/img-20.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-21.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-22.jpg)"></div>
+</section>
+<!-- More examples are here: https://designmodo.com/slides/app/#examples -->
+
+
+</body>
+</html>
